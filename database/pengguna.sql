@@ -44,28 +44,28 @@ INSERT INTO pengguna (id, nama, created_at, updated_at) VALUES
 -- Table structure for table `telepon`
 --
 
--- CREATE TABLE telepon (
---   id int(10)  NOT NULL,
---   nomor_telepon int(13) NOT NULL,
---   pengguna_id int NOT NULL,
+CREATE TABLE telepon (
+  id int(10)  NOT NULL,
+  nomor_telepon int(13) NOT NULL,
+  pengguna_id int NOT NULL,
   
---   created_at timestamp NULL DEFAULT NULL,
---   updated_at timestamp NULL DEFAULT NULL
--- ) ;
+  created_at timestamp NULL DEFAULT NULL,
+  updated_at timestamp NULL DEFAULT NULL
+) ;
 -- --
 -- -- Dumping data for table `telepon`
 -- --
 
--- INSERT INTO telepon (id, nomor_telepon, pengguna_id, created_at, updated_at) VALUES
--- (1, '(+62) 878 0989 834', 1, NULL, NULL),
--- (2, '(+62) 509 9868 0557', 2, NULL, NULL),
--- (3, '023 9503 4379', 3, NULL, NULL),
--- (4, '(+62) 24 1120 052', 4, NULL, NULL),
--- (5, '0535 3676 2454', 5, NULL, NULL),
--- (6, '0614 0945 4128', 6, NULL, NULL),
--- (7, '0460 8541 5478', 7, NULL, NULL),
--- (8, '(+62) 713 5497 976', 8, NULL, NULL),
--- (9, '(+62) 653 4057 294', 9, NULL, NULL);
+INSERT INTO telepon (id, nomor_telepon, pengguna_id, created_at, updated_at) VALUES
+(1, '(+62) 878 0989 834', 1, NULL, NULL),
+(2, '(+62) 509 9868 0557', 2, NULL, NULL),
+(3, '023 9503 4379', 3, NULL, NULL),
+(4, '(+62) 24 1120 052', 4, NULL, NULL),
+(5, '0535 3676 2454', 5, NULL, NULL),
+(6, '0614 0945 4128', 6, NULL, NULL),
+(7, '0460 8541 5478', 7, NULL, NULL),
+(8, '(+62) 713 5497 976', 8, NULL, NULL),
+(9, '(+62) 653 4057 294', 9, NULL, NULL);
 
 --
 -- Indexes for dumped tables
@@ -80,8 +80,8 @@ ALTER TABLE pengguna
 --
 -- Indexes for table `telepon`
 --
--- ALTER TABLE telepon
---   ADD PRIMARY KEY (id);
+ALTER TABLE telepon
+  ADD PRIMARY KEY (id);
 
 --
 -- AUTO_INCREMENT for dumped tables

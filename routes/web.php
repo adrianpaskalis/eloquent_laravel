@@ -27,4 +27,5 @@ Route::get('/pegawai/hapus/{id}', 'PegawaiController@delete');
 
 
 Route::get('/pengguna', 'PenggunaController@index');
+Route::get('/article', 'WebController@index');
 
